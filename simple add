@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Addition</title>
+</head>
+<body>
+    <input id="num1" value="4">
+    <input id="num2" value="7">
+    <button onclick="resultFunction()">Add</button>
+    <p id="result">Result</p>
+
+    <script>
+        function resultFunction() {
+            // Selecting input boxes
+            var box1 = document.getElementById("num1");
+            var box2 = document.getElementById("num2");
+            var result = document.getElementById("result");
+
+            // Getting values and converting to numbers
+            var box1Value = Number(box1.value);
+            var box2Value = Number(box2.value);
+
+            // Calculating total
+            var total = box1Value + box2Value;
+
+            // Displaying result
+            result.textContent = "Result: " + total;
+        }
+    </script>
+</body>
+</html>
